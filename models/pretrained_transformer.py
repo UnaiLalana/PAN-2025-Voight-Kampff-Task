@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 
 
 class BERTDataset(Dataset):
-    def __init__(self, texts, labels, tokenizer, max_length=256):
+    def __init__(self, texts, labels, tokenizer, max_length=512):
         self.texts = texts.reset_index(drop=True)
         self.labels = labels.reset_index(drop=True)
         self.tokenizer = tokenizer

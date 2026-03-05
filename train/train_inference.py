@@ -8,8 +8,8 @@ import time
 
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-EPOCHS = 10
-PATIENCE = 5
+EPOCHS = 3
+PATIENCE = 3
 
 def evaluate_model(model, loader, metric):
     model.eval()

@@ -24,7 +24,7 @@ class LSTMDataset(Dataset):
         }
 
 def collate_lstm(batch):
-    MAX_LEN = 256
+    MAX_LEN = 512
 
     input_ids = []
     labels = []
